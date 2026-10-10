@@ -10,7 +10,7 @@
 @media(max-width:760px){.folio-footer .folio-signature{max-width:100%}.folio-introduction .folio-main{aspect-ratio:1/1}}
 .folio-ambiance-detail{overflow:hidden}
 .folio-side .folio-ambiance-detail img{object-fit:contain;object-position:center;aspect-ratio:auto;height:auto;width:100%}
-.folio-introduction .folio-note{max-width:none;line-height:1.8}
+.folio-introduction .folio-note{max-width:none;width:100%;text-align:center;line-height:1.8}
 .folio-introduction .folio-note span{display:block}
 .folio-introduction .folio-note span+span{margin-top:12px}
 .portfolio-architect{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:36px;padding:30px 0 8px;border-top:1px solid #e7e1d5}
