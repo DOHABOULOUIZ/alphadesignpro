@@ -1,5 +1,11 @@
 /* Burgundy text on light surfaces; warm gold on dark surfaces. */
 :root{--text-burgundy:#571b30;--text-gold:#846125;--text-gold-light:#efd5a0}
+/* Keep the brand palette on mobile, including native form controls. */
+html:has(body.brand-text){color-scheme:light}
+body.brand-text{-webkit-tap-highlight-color:#d8bf8833}
+body.brand-text :where(input,textarea,select){color-scheme:light;accent-color:var(--text-burgundy);-webkit-text-fill-color:var(--text-burgundy)}
+body.brand-text :where(input,textarea)::placeholder{-webkit-text-fill-color:#805063}
+body.brand-text .header nav a[aria-current]:not(.nav-cta){color:var(--text-gold)!important}
 body.brand-text{color:var(--text-burgundy)}
 body.brand-text :where(h1,h2,h3,h4,h5,h6,p,a,span,small,strong,label,li,figcaption,summary,button,input,textarea,select,option){color:var(--text-burgundy)!important}
 body.brand-text :where(em,.eyebrow,.about-kicker,.about-label,.journal-category,.space-index,.process-number,.tile-number,.folio-type,.folio-number,.step-number,.footer-location,figcaption){color:var(--text-gold)!important}
