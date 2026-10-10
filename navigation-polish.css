@@ -1,4 +1,4 @@
-body .header{height:104px;transition:height .45s cubic-bezier(.22,1,.36,1),box-shadow .45s;background:#f2e9da!important}
+body .header{height:104px;transition:height .45s cubic-bezier(.22,1,.36,1),box-shadow .45s;background:#571b30!important}
 body .header.is-scrolled{height:84px;box-shadow:0 8px 30px #3d102014}
 body .header .landscape-logo{transition:width .45s,height .45s,transform .4s}
 body .header.is-scrolled .landscape-logo{width:125px;height:76px}
@@ -33,3 +33,15 @@ body .header nav .nav-cta:hover:before{transform:translateX(120%)}
  .nav-indicator{display:none}
 }
 @media(prefers-reduced-motion:reduce){body .header,body .header .landscape-logo,body .header nav,body .header nav a,body .header nav a:before,body .header nav .nav-cta,body .header .menu-icon:before,body .header .menu-icon:after,.nav-indicator{transition:none!important;animation:none!important}}
+
+/* Burgundy and gold navigation, shared by desktop and mobile. */
+body.brand-text .header,body.brand-text .header.is-scrolled{background:#571b30!important;border-bottom-color:#d8bf8870}
+body.brand-text .header nav,body.brand-text .header nav.open{background:#571b30}
+body.brand-text .header :where(a,span,button){color:#f5d88d!important}
+body.brand-text .header nav a[aria-current]:not(.nav-cta),body.brand-text .header nav a:hover{color:#fff0bf!important}
+body.brand-text .header .nav-indicator,body.brand-text .header nav a:after{background:#f5d88d}
+body.brand-text .header nav .nav-cta{background:#f5d88d;border-color:#f5d88d;color:#571b30!important}
+body.brand-text .header nav .nav-cta:hover{background:#fff0bf;color:#571b30!important}
+body.brand-text .header .menu-toggle{border-color:#d8bf8870;background:transparent}
+body.brand-text .header nav a:not(.nav-cta){border-bottom-color:#d8bf8833}
+body.brand-text .header a:focus-visible,body.brand-text .header button:focus-visible{outline-color:#f5d88d}
