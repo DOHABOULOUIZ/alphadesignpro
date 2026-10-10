@@ -1,0 +1,22 @@
+/* Beige navigation with a burgundy identity and restrained motion. */
+html{scroll-padding-top:105px}
+body .header{position:fixed;inset:0 0 auto;width:100%;height:88px;padding:0 5%;gap:30px;border-bottom:1px solid #c9ae7970;background:#f2e9da!important;box-shadow:0 3px 18px #3d102008;transition:height .35s,box-shadow .35s,background .35s;z-index:30}
+body .header.is-scrolled{height:76px;background:#f2e9daf5!important;backdrop-filter:blur(14px);box-shadow:0 8px 28px #3d102019}
+body .header .wordmark{flex:0 0 auto}
+body .header .landscape-logo{width:255px;height:68px;transition:width .35s,height .35s}
+body .header.is-scrolled .landscape-logo{width:235px;height:60px}
+body .header nav{flex:1;justify-content:flex-end;align-items:center;gap:clamp(18px,2.7vw,40px);font-size:12px;align-self:stretch}
+body .header nav a{position:relative;min-height:44px;padding:8px 0;font-weight:500;letter-spacing:.6px;text-decoration:none;transition:color .25s}
+body .header nav a:not(.nav-cta):after{content:'';position:absolute;height:2px;background:#956d35;left:0;right:0;bottom:4px;transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+body .header nav a:hover:after,body .header nav a:focus-visible:after,body .header nav a[aria-current="page"]:after{transform:scaleX(1)}
+body .header nav .nav-cta{align-self:center;min-height:44px;padding:12px 24px;margin-left:10px;background:#4b1525;color:#fff4df;border:1px solid #4b1525;border-radius:2px;transition:background .25s,transform .25s,box-shadow .25s}
+body .header nav .nav-cta:hover{background:#672239;color:#fff4df;transform:translateY(-2px);box-shadow:0 5px 14px #4b152522}
+body .header a:focus-visible,body .header button:focus-visible{outline:2px solid #805c28;outline-offset:5px}
+@media(prefers-reduced-motion:no-preference){body .header{animation:navigation-arrive .7s cubic-bezier(.22,1,.36,1) both}}
+@keyframes navigation-arrive{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes menu-arrive{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1050px){body .header{padding-inline:4%;gap:18px}body .header .landscape-logo{width:210px}body .header.is-scrolled .landscape-logo{width:200px}body .header nav{gap:18px}body .header nav a{font-size:11px}body .header nav .nav-cta{padding:12px 16px;margin-left:0}}
+@media(max-width:760px){html{scroll-padding-top:95px}body .header,body .header.is-scrolled{height:80px;padding-inline:5%}body .header .landscape-logo,body .header.is-scrolled .landscape-logo{width:210px;height:60px}body .header .menu-toggle{border:1px solid #cbb99a;padding:8px 12px;border-radius:2px;gap:14px;min-height:44px}body .header nav{position:absolute;top:80px;left:0;right:0;max-height:calc(100svh - 80px);background:#f2e9dafa;backdrop-filter:blur(14px);padding:20px 7% 26px;box-shadow:0 16px 28px #3d10201a;align-items:stretch;gap:6px;border-bottom:1px solid #c9ae79}body .header nav a{font-size:14px;min-height:48px;padding:12px 0}body .header nav a:after{right:auto;width:40px}body .header nav .nav-cta{align-self:stretch;justify-content:center;margin:12px 0 0;padding:13px 20px}body .header nav.open{display:flex;flex-direction:column}}
+@media(max-width:380px){body .header .landscape-logo,body .header.is-scrolled .landscape-logo{width:170px}}
+@media(max-width:760px) and (prefers-reduced-motion:no-preference){body .header nav.open{animation:menu-arrive .3s ease both}}
+@media(prefers-reduced-motion:reduce){body .header,body .header .landscape-logo,body .header nav a,body .header nav a:after,body .header nav .nav-cta{transition:none}}

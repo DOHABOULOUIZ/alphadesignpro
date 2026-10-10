@@ -1,0 +1,8 @@
+/* Exact vector artwork extracted from page 5 of logo.pdf. */
+body .header,body .header.is-scrolled{height:104px}
+body .header .landscape-logo,body .header.is-scrolled .landscape-logo{width:150px;height:94px;background:transparent;overflow:visible}
+body .header .landscape-logo img{width:100%;height:100%;position:static;transform:none;object-fit:contain}
+body .premium-footer .landscape-logo{width:220px;height:182px;background:transparent;overflow:visible}
+body .premium-footer .landscape-logo img{position:static;width:100%;height:100%;max-width:100%;transform:none;object-fit:contain}
+html{scroll-padding-top:120px}
+@media(max-width:760px){body .header,body .header.is-scrolled{height:94px}body .header .landscape-logo,body .header.is-scrolled .landscape-logo{width:120px;height:84px}body .header nav{top:94px;max-height:calc(100svh - 94px)}html{scroll-padding-top:110px}}

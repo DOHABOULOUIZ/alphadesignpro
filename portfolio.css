@@ -1,0 +1,44 @@
+.portfolio-only .folio-stage{min-height:100svh;display:flex;align-items:center;padding-bottom:55px}
+.portfolio-only .folio-panel{width:100%}
+.folio-heading>.folio-bio{max-width:750px;margin:22px auto 0;font:13px/1.8 Arial,sans-serif;letter-spacing:0;text-transform:none;color:#777267}
+.folio-signature{font:12px/1.6 Georgia,serif;color:#78694e;display:flex;align-items:center}
+.folio-interiors{display:block;font-size:17px;font-style:italic;margin-top:9px;color:#82745c}
+.folio-introduction .folio-type{margin-bottom:45px}
+.folio-introduction .folio-main{object-position:50% 65%}
+.folio-ambiance-detail{overflow:hidden}
+.folio-side .folio-ambiance-detail img{object-fit:cover;object-position:50% 85%;aspect-ratio:1}
+.portfolio-architect{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:36px;padding:30px 0 8px;border-top:1px solid #e7e1d5}
+.portfolio-architect .architect-label{font:10px Arial,sans-serif;letter-spacing:1.5px;color:#8a7960;margin:0 0 14px}
+.portfolio-architect h2{font:400 clamp(24px,2.4vw,34px)/1.3 Georgia,serif;letter-spacing:-.5px;margin:0 0 12px;color:#30291f}
+.portfolio-architect h2 span{font-size:.65em;font-style:italic;color:#81735e}
+.portfolio-architect p{font:13px/1.8 Arial,sans-serif;color:#756c5e;margin:0 0 8px}
+@media(max-width:760px){.portfolio-architect{grid-template-columns:1fr;gap:14px;padding-top:24px}.portfolio-architect h2 span{display:block;margin-top:5px}}
+.folio-stage{padding:80px 6%;background:linear-gradient(#c7bdaebd,#c7bdaebd),url('assets/ambiance-salon.jpg') center/cover;color:#30291f}
+.inner-page main>.folio-stage:first-child{padding-top:130px}
+.folio-panel{max-width:1300px;margin:auto;background:#fffefa;padding:28px 28px 20px;box-shadow:0 25px 50px #28211830}
+.folio-heading{position:static!important;background:none!important;border:0!important;padding:0!important;text-align:center;margin:0 0 38px;height:auto!important}
+.folio-heading>p{font:10px Arial,sans-serif;color:#898174;letter-spacing:1px;margin:0 0 15px}
+.folio-heading h1,.folio-heading h2{font:400 clamp(32px,3.6vw,55px)/1.12 Georgia,serif;letter-spacing:-1.8px;color:#30291f;margin:0}
+.folio-heading em{font-weight:400;color:inherit}
+.folio-carousel{position:relative;touch-action:pan-y pinch-zoom}
+.folio-slide{display:grid;grid-template-columns:1.7fr 1fr .72fr;gap:26px;min-height:470px}
+.folio-slide[hidden],.folio-controls[hidden]{display:none}
+.folio-main{display:block;width:100%;height:480px;object-fit:cover}
+.folio-description{display:flex;flex-direction:column;align-items:flex-start}
+.folio-type{font:10px/1.6 Arial,sans-serif;color:#81796b;margin:0 0 65px}
+.folio-description h3{font:400 clamp(22px,2.1vw,32px)/1.12 Georgia,serif;margin:0 0 16px;color:#30291f}
+.folio-description>div>p,.folio-note{font:12px/1.65 Arial,sans-serif;color:#777267}
+.folio-note{margin-top:auto;margin-bottom:0;padding-top:30px;max-width:190px}
+.folio-side{display:flex;flex-direction:column;align-items:stretch;padding-bottom:65px}
+.folio-number{text-align:right;font:10px Arial,sans-serif;color:#81796b}
+.folio-side figure{margin:65px 0 0}.folio-side img{display:block;width:100%;height:200px;object-fit:cover}.folio-side figcaption{font:11px/1.5 Arial,sans-serif;color:#777267;margin-top:12px}
+.folio-controls{position:absolute;bottom:0;right:0;display:flex;gap:10px}
+.folio-controls button{width:42px;height:42px;border-radius:50%;border:1px solid #ded9cf;background:#fffefa;color:#4d4434;font-size:22px;cursor:pointer;transition:background .25s,transform .25s}
+.folio-controls button:last-child{background:#e4dac7}.folio-controls button:hover{background:#cbbb9d;transform:translateY(-2px)}
+.folio-live{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.folio-footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #e7e1d5;margin-top:25px;padding-top:16px}
+.folio-footer a{font:11px/1.6 Arial,sans-serif;color:#78694e;min-height:34px;display:flex;align-items:center}
+.folio-carousel:focus-visible,.folio-controls button:focus-visible,.folio-footer a:focus-visible{outline:2px solid #9a7841;outline-offset:4px}
+@media(max-width:1000px){.folio-slide{grid-template-columns:1.3fr 1fr;gap:24px}.folio-main{grid-row:1/3;height:490px}.folio-side{padding-bottom:0;display:none}.folio-description{padding-bottom:65px}.folio-type{margin-bottom:30px}.folio-controls{bottom:10px}}
+@media(max-width:760px){.folio-stage{padding:55px 5%}.folio-panel{padding:25px 18px 16px}.folio-heading{margin-bottom:25px}.folio-heading h1,.folio-heading h2{font-size:34px;letter-spacing:-1px}.folio-slide{display:flex;flex-direction:column;gap:20px;min-height:0}.folio-main{height:auto;aspect-ratio:4/3}.folio-description{padding-bottom:65px}.folio-type{margin-bottom:20px}.folio-description h3{font-size:27px}.folio-note{max-width:none;padding-top:10px}.folio-footer{flex-direction:column;gap:5px}.folio-controls button{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.folio-controls button{transition:none}}

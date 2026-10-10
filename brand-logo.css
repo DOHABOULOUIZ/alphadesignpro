@@ -1,0 +1,7 @@
+.landscape-logo{display:block;position:relative;width:150px;height:78px;overflow:hidden;flex-shrink:0;background:transparent}
+.landscape-logo img{position:absolute;inset:0;width:100%;max-width:none;height:100%;transform:none;object-fit:contain}
+.header{height:88px}
+.header .wordmark{line-height:0}
+.premium-footer .landscape-logo{width:230px;height:150px}
+.premium-footer .landscape-logo img{filter:brightness(0) invert(1)}
+@media(max-width:760px){.header{height:80px}.header nav{top:80px;max-height:calc(100svh - 80px)}.header .landscape-logo{width:132px;height:70px}.premium-footer .landscape-logo{width:210px;height:140px}}

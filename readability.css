@@ -1,0 +1,42 @@
+/* Shared reading scale for the active site. Keep the hero's established layout. */
+body{font-size:16px}
+body main .section h2,body .about-editorial h2,body .about-statement h1,body .service-manifesto h1,body .folio-heading h1,body .folio-heading h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.2;letter-spacing:-1px}
+body main .section>h2,body main .section .section-heading h2,body .turnkey h2,body .conception h2,body .about-story h2,body .contact h2,body .preview-heading h2{font-size:clamp(38px,4.1vw,60px)}
+body .section .eyebrow,body .about-label,body .about-editorial .about-kicker{font-size:12px;line-height:1.6;letter-spacing:1.2px;font-weight:500}
+body .turnkey-points{margin:30px 0 20px}
+body .turnkey-points li{font-size:17px;line-height:1.85;color:#484a40;margin-bottom:22px}
+body .turnkey-points strong{font-weight:600;color:#25271f}
+body .turnkey-photo figcaption,body .study-sheets figcaption{font-size:12px;line-height:1.7;color:#5e5e51}
+body .turnkey .text-link,body .section .text-link,body .about-more{font-size:14px;line-height:1.6;min-height:44px}
+body .about-editorial-copy>p:not(.about-kicker),body .about-statement>p,body .conception-copy>p:not(.eyebrow),body .study-card>p,body .studies-intro{font-size:16px;line-height:1.85;color:#505044}
+body .process-complete .steps h3,body .study-card h3{font-family:Georgia,serif;font-size:28px;line-height:1.25;letter-spacing:-.4px}
+body .process-complete .steps p,body .package-note,body .process-scope,body .why-grid p{font-size:16px;line-height:1.8;color:#505044}
+body .packages-complete .package-grid h3{font-family:Georgia,serif;font-size:32px;font-weight:400;line-height:1.25;color:#26271f;margin-bottom:26px}
+body .packages-complete .package-grid article{padding:38px 28px 28px}
+body .packages-complete .package-grid li{font-size:16px;line-height:1.75;color:#34372d;gap:10px;padding:18px 0}
+body .packages-complete .package-grid li small{font-size:13px;font-weight:500;letter-spacing:0;align-self:flex-start;padding:3px 9px;border-radius:3px;background:#e8eddf;color:#3e5031}
+body .packages-complete .package-grid li.feature-optional small{background:#f0e5ce;color:#6e5122}
+body .packages-complete .package-grid li.feature-excluded{color:#606254}
+body .packages-complete .package-grid li.feature-excluded small{background:#ecebe5;color:#57594e}
+body .packages-complete .button{font-size:14px;font-weight:500;min-height:52px;padding:14px 16px;line-height:1.6}
+body .packages-complete .pack-badge{font-size:11px;line-height:1.6;background:#765a2a;padding:5px 13px}
+body .packages-complete .complete-pack{border:2px solid #98783f}
+body .packages-complete .package-note{font-size:16px;line-height:1.9;color:#505044;max-width:850px}
+body .why-grid article{background:#fffdf8;border-color:#cfc3a6;padding:38px}
+body .why-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:400;line-height:1.3;letter-spacing:-.5px;color:#624a26;margin-bottom:24px}
+body .why-grid p{font-size:17px;line-height:1.85;color:#42463a}
+body .why-us>.text-link{font-size:15px;font-weight:500}
+@media(max-width:1050px) and (min-width:761px){body .packages-complete .package-grid{grid-template-columns:1fr}body .packages-complete .package-grid article{max-width:680px;width:100%;margin-inline:auto}}
+@media(max-width:760px){body .packages-complete .package-grid article,body .why-grid article{padding:30px 24px}body .packages-complete .package-grid h3{font-size:29px}body .why-grid h3{font-size:27px}body .why-grid p{font-size:16px}}
+body .journal-card p,body .journal-note p{font-size:15px;line-height:1.8;color:#555346}
+body .journal-card summary,body .study-card summary{font-size:13px}
+body .folio-description>div>p,body .folio-note,body .folio-heading>.folio-bio{font-size:15px;line-height:1.8;color:#595548}
+body .folio-description h3{font-family:Georgia,serif;font-size:30px;line-height:1.2}
+body .folio-type,body .folio-side figcaption{font-size:12px;line-height:1.7;color:#665c4d}
+body .folio-slide{min-height:520px}body .folio-main{height:520px}
+body .contact label{font-size:14px;font-weight:500;color:#303127}
+body .contact input,body .contact select,body .contact textarea{font-size:16px}
+body .contact>div>p:not(.eyebrow):not(.address){font-size:16px;line-height:1.85}
+body .contact .form-note{font-size:13px!important;line-height:1.8}
+@media(max-width:1050px){body .process-complete .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}body .folio-description h3{font-size:27px}}
+@media(max-width:760px){body main .section>h2,body main .section .section-heading h2,body .turnkey h2,body .conception h2,body .about-story h2,body .contact h2,body .preview-heading h2{font-size:clamp(33px,8vw,44px);letter-spacing:-.7px}body .turnkey-points li{font-size:16px}body .process-complete .steps{grid-template-columns:1fr;gap:0}body .process-complete .steps h3,body .study-card h3{font-size:26px}body .folio-slide{min-height:0}body .folio-main{height:auto}body .folio-description>div>p{font-size:15px}}

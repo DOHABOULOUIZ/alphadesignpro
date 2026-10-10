@@ -1,0 +1,21 @@
+.about-page #journal{scroll-margin-top:120px}
+.about-page #journal>.eyebrow,.about-page #journal>h2{text-align:left}
+.about-page #journal>h2{font:400 clamp(36px,4vw,56px)/1.15 Georgia,serif;letter-spacing:-1px;margin:0 0 22px}
+.about-page #journal>.journal-intro{max-width:620px;font-size:17px;line-height:1.8;color:#5c5249;margin:0 0 42px}
+.about-page #journal .journal-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:start}
+.about-page #journal .journal-card{margin:0;padding:0;background:none;min-width:0}
+.about-page #journal .journal-card>img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;transition:filter .4s}
+.about-page #journal .journal-card-copy{padding:22px 0 0;text-align:left;min-height:0;background:none}
+.journal-category{display:block;color:#876732;font-size:11px;letter-spacing:1.4px;margin-bottom:14px}
+.about-page #journal .journal-card h3{font:400 26px/1.25 Georgia,serif;color:#481525;letter-spacing:-.5px;min-height:2.5em;margin:0 0 16px;text-wrap:balance}
+.about-page #journal .journal-excerpt{font-size:15px;line-height:1.8;color:#5c5249;min-height:5.4em;margin:0 0 24px}
+.about-page #journal summary{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:48px;margin:0;padding:12px 0;border-top:1px solid #cbb99f;color:#481525;font-size:14px;cursor:pointer}
+.about-page #journal summary span{font-size:21px;transition:transform .25s}
+.about-page #journal summary:hover span{transform:translateX(4px)}
+.about-page #journal summary:focus-visible{outline:2px solid #681e38;outline-offset:5px}
+.about-page #journal .journal-note{padding:18px 0 0;border-top:1px solid #cbb99f}
+.about-page #journal .journal-note h4{font:400 22px/1.35 Georgia,serif;color:#481525}
+.about-page #journal .journal-note p{font-size:15px;line-height:1.85;color:#5c5249;margin:0}
+@media(max-width:1100px){.about-page #journal .journal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 28px}.about-page #journal .journal-card>img{aspect-ratio:4/3}.about-page #journal .journal-excerpt{min-height:3.6em}}
+@media(max-width:600px){.about-page #journal .journal-grid{grid-template-columns:1fr;gap:38px}.about-page #journal .journal-card h3{min-height:0;font-size:28px}.about-page #journal .journal-excerpt{min-height:0;font-size:16px}.about-page #journal .journal-note p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.about-page #journal summary span,.about-page #journal .journal-card>img{transition:none}}

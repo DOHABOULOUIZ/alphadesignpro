@@ -1,0 +1,20 @@
+body .about-editorial{padding-block:clamp(65px,8vw,120px);align-items:center}
+body .about-editorial .about-kicker{font-size:12px;letter-spacing:2px;margin-bottom:38px}
+body .about-editorial h2{font-size:clamp(38px,4.5vw,66px);line-height:1.13;margin-bottom:30px}
+body .about-editorial-copy>p:not(.about-kicker){font-family:'DM Sans',Arial,sans-serif;font-size:17px;line-height:1.9;max-width:510px;margin-bottom:24px}
+body .about-more{font-size:13px;min-height:50px;gap:70px;margin-top:8px}
+body .about-more span{display:inline-block;transition:transform .35s}
+body .about-more:hover span{transform:translateX(9px)}
+body .about-editorial-images figure{overflow:hidden}
+body .about-editorial-images figure:first-child img{height:560px}
+body .about-editorial-images figure:last-child{margin-top:55px}
+body .about-editorial-images figure:last-child img{height:310px}
+body .about-editorial-images img{transition:transform 1s cubic-bezier(.22,1,.36,1)}
+body .folio-description p{font-size:16px;line-height:1.8}
+body .folio-description h3{font-size:clamp(28px,2.5vw,38px);line-height:1.2}
+body .folio-description .folio-type,body .folio-side figcaption,body .folio-number,body .folio-footer a{font-size:12px;line-height:1.7}
+body .folio-controls button{min-width:44px;min-height:44px;transition:transform .3s,box-shadow .3s}
+body .folio-controls button:hover{transform:translateY(-3px);box-shadow:0 6px 16px #571b3026}
+@media(hover:hover){body .about-editorial-images figure:hover img{transform:scale(1.06)}}
+@media(max-width:760px){body .about-editorial-copy>p:not(.about-kicker){font-size:16px}body .about-editorial-images figure:first-child img{height:360px}body .about-editorial-images figure:last-child img{height:230px}body .about-editorial-images figure:last-child{margin-top:32px}body .folio-description p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){body .about-editorial-images img,body .about-more span,body .folio-controls button{transition:none}}

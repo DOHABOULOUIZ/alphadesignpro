@@ -1,0 +1,34 @@
+.studio-journal{background:#fffefa}.studio-journal>.eyebrow,.studio-journal>h2{text-align:center}.studio-journal>h2{margin-bottom:55px}
+.journal-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:25px;align-items:start}
+.journal-card>img{width:100%;height:265px;object-fit:cover}.journal-card:nth-child(3){margin-top:155px}
+.journal-card h3{font:23px/1.15 Georgia,serif;margin:14px 0;color:#30291f;letter-spacing:-.6px}
+.journal-card p{font-size:12px;line-height:1.8;color:#777267}.journal-card summary{font-size:10px;min-height:44px;justify-content:flex-start;gap:20px}.journal-card summary:after{display:none}
+.journal-note{padding-top:12px;border-top:1px solid #ded7c9}.journal-note h4{font:19px/1.3 Georgia,serif;margin:0 0 12px}.journal-note p{margin-bottom:0}
+.journal-feature{position:relative;padding:18px;background:url('assets/ambiance-salon.jpg') center/cover}
+.journal-feature>img{display:none}.journal-feature .journal-card-copy{background:#fffefa;padding:65px 22px 45px;min-height:420px;text-align:center}.journal-feature h3{font-size:28px;margin-bottom:25px}.journal-feature summary{justify-content:center;margin-top:30px}.journal-feature .journal-note{text-align:left}
+.about-page .contact{background:#fffefa;border-top:1px solid #ede7db;grid-template-columns:1fr 1fr;gap:12%}
+.about-page .contact h2{font:400 clamp(36px,4vw,60px)/1.12 'Italiana',Georgia,serif;letter-spacing:-1px}
+.about-page .contact .eyebrow{font-size:9px}.about-page .contact>div>p:not(.eyebrow):not(.address){font-size:13px;max-width:330px}
+.about-page .contact .contact-phone{font-size:20px}.about-page .contact label{font-size:11px;margin-bottom:5px}.about-page .contact input,.about-page .contact select{background:transparent;border:0;border-bottom:1px solid #aaa394;border-radius:0;color:#30291f;padding:10px 0;min-height:44px}.about-page .contact textarea{background:transparent;border:1px solid #bcb4a5;border-radius:0;color:#30291f;padding:12px}.about-page .contact button{background:transparent;color:#30291f;border:0;border-bottom:1px solid #9b907c;padding:12px 0;max-width:260px}.about-page .contact .form-note{font-size:11px!important}
+.studio-footer{display:grid;grid-template-columns:1.2fr .8fr 1fr 1fr;gap:40px;padding:50px 7% 25px;background:#eee9df;color:#30291f;align-items:start;border:0}
+.studio-footer .footer-brand{font:24px Georgia,serif;letter-spacing:-.7px}.studio-footer>div{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.studio-footer .footer-label{display:block;font:9px Arial,sans-serif;letter-spacing:1px;color:#8b8273;margin:0 0 10px}.studio-footer>div>a,.studio-footer>div>span{font-size:11px;line-height:1.8}.studio-footer a{min-height:30px}.studio-footer small{grid-column:1/-1;font-size:9px;color:#8b8273;border-top:1px solid #dbd3c5;padding-top:20px}
+@media(max-width:1050px){.journal-grid{gap:18px}.journal-feature .journal-card-copy{padding:40px 15px}.journal-card h3{font-size:21px}.journal-card>img{height:230px}.studio-footer{gap:25px}}
+@media(max-width:760px){.journal-grid{grid-template-columns:1fr 1fr;gap:30px 18px}.journal-feature{grid-column:1/-1}.journal-feature .journal-card-copy{min-height:0;padding:40px 25px}.journal-card:nth-child(3){margin-top:60px}.journal-card>img{height:220px}.journal-card h3{font-size:21px}.about-page .contact{grid-template-columns:1fr;gap:35px}.studio-footer{grid-template-columns:1fr 1fr;gap:30px}.studio-footer .footer-brand{grid-column:1/-1}.studio-footer .footer-label{display:block}}
+@media(max-width:380px){.journal-grid{grid-template-columns:1fr}.journal-card:nth-child(3){margin-top:0}.journal-card>img{height:280px}}
+/* Readable contact typography, retaining the light editorial layout. */
+.about-page .contact h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(36px,3.8vw,56px);line-height:1.18;letter-spacing:-1.2px;color:#25251f}
+.about-page .contact h2 em{color:#795b2c}
+.about-page .contact .eyebrow{font-size:12px;font-weight:600;letter-spacing:1.2px;color:#715629;margin-bottom:24px}
+.about-page .contact>div>p:not(.eyebrow):not(.address){font-size:17px;line-height:1.85;color:#45473d;max-width:410px}
+.about-page .contact .contact-phone{font-size:25px;font-weight:500;color:#25251f}
+.about-page .contact .address{font-size:13px!important;line-height:1.9;color:#535548}
+.about-page .contact .address strong{font-size:18px;color:#25251f}
+.about-page .contact .text-link{font-size:15px;color:#644b26;line-height:1.7}
+.about-page .contact label{font-size:14px;font-weight:500;line-height:1.6;color:#303127;margin-bottom:8px}
+.about-page .contact input,.about-page .contact select,.about-page .contact textarea{font-family:'DM Sans',Arial,sans-serif;font-size:16px;line-height:1.6;color:#292a23;border-color:#8e887b}
+.about-page .contact input,.about-page .contact select{min-height:50px;padding:12px 0}
+.about-page .contact textarea{padding:14px;min-height:145px}
+.about-page .contact input::placeholder,.about-page .contact textarea::placeholder{color:#69695f;opacity:1}
+.about-page .contact button{font-size:15px;font-weight:500;min-height:52px;max-width:300px;color:#40321f;border-color:#8e7755}
+.about-page .contact .form-note{font-size:13px!important;line-height:1.8;color:#5d5e52;max-width:460px}
+@media(max-width:760px){.about-page .contact h2{font-size:clamp(33px,8vw,45px);letter-spacing:-.8px}.about-page .contact>div>p:not(.eyebrow):not(.address){font-size:16px}.about-page .contact .contact-phone{font-size:23px}.about-page .contact .text-link{font-size:14px}}

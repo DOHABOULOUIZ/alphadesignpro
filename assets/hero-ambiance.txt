@@ -1,0 +1,6 @@
+Image d'ambiance illustrative générée avec l'outil intégré Imagegen.
+Cette image ne représente pas une réalisation réelle d'AlphaDesignPro.
+Fichier : hero-ambiance.png
+
+Prompt :
+Create a photorealistic architectural interior photograph for a premium interior design website hero. Wide horizontal 16:9 composition. Warm minimalist living room, beige limewash wall, sculptural walnut console across lower left and center, large round bronze mirror left of center, low cream boucle ottoman foreground, a tall ceramic vase with sparse olive branches on far right, soft sunlight entering from right. Quiet luxury, tactile stone floor, warm wood grain, restrained natural palette. Camera straight on at eye level, generous uninterrupted wall in upper half and center-right for website headline overlay. Original interior inspired by refined editorial architecture photography. No people, no text, no lettering, no logo, no website UI, no borders. Keep the room visible and naturally lit; dark overlay will be applied in CSS.

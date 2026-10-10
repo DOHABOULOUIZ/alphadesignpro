@@ -1,0 +1,17 @@
+.services-page #processus{scroll-margin-top:110px}
+.services-page #processus .section-heading{display:grid;grid-template-columns:1.2fr 1fr;align-items:end;gap:40px;margin-bottom:48px}
+.services-page #processus h2{font:400 clamp(36px,4vw,56px)/1.12 Georgia,serif;letter-spacing:-1.5px;margin:0}
+.services-page #processus .process-intro{font-size:16px;line-height:1.85;max-width:410px;margin:0 0 3px;color:#57504a}
+.services-page #processus .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;list-style:none;padding:0;margin:0;border-top:1px solid #baa581}
+.services-page #processus .steps li{display:block;padding:28px 22px 12px;border:0;min-width:0}
+.services-page #processus .steps li:first-child{padding-left:0}
+.services-page #processus .steps li:last-child{padding-right:0}
+.services-page #processus .steps li+li{border-left:1px solid #ded3c1}
+.services-page #processus .steps li:before{display:none}
+.services-page #processus .process-number{display:block;float:none;font:500 13px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:2px;color:#8b6b35;margin:0 0 20px}
+.services-page #processus .steps h3{font:400 clamp(21px,1.9vw,27px)/1.25 Georgia,serif;letter-spacing:-.4px;color:#481525;min-height:2.5em;margin:0 0 16px;text-wrap:balance}
+.services-page #processus .steps p{font:400 15px/1.85 'DM Sans',Arial,sans-serif;color:#57504a;margin:0;min-height:0;max-width:26ch;text-wrap:pretty}
+.services-page #processus .process-scope{display:block;max-width:none;border-top:1px solid #ded3c1;padding:23px 0 0;margin:30px 0 0;font-size:14px;line-height:1.85;color:#645c52}
+.services-page #processus .process-scope strong{color:#481525;font-weight:600}
+@media(max-width:1000px){.services-page #processus .steps{grid-template-columns:1fr}.services-page #processus .steps li,.services-page #processus .steps li:first-child,.services-page #processus .steps li:last-child{display:grid;grid-template-columns:45px minmax(160px,.8fr) 1.2fr;align-items:baseline;gap:22px;padding:24px 0;border:0;border-bottom:1px solid #ded3c1}.services-page #processus .process-number,.services-page #processus .steps h3,.services-page #processus .steps p{margin:0;min-height:0;max-width:none}.services-page #processus .steps h3{font-size:25px}.services-page #processus .process-scope{border:0;padding:0}}
+@media(max-width:600px){.services-page #processus .section-heading{grid-template-columns:1fr;gap:22px;margin-bottom:30px}.services-page #processus .steps li,.services-page #processus .steps li:first-child,.services-page #processus .steps li:last-child{grid-template-columns:32px 1fr;gap:10px 16px}.services-page #processus .steps p{grid-column:2;font-size:16px;line-height:1.75}.services-page #processus h2{letter-spacing:-1px}.services-page #processus .steps h3{font-size:26px}}

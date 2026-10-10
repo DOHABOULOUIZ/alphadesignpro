@@ -1,0 +1,19 @@
+/* Burgundy text on light surfaces; warm gold on dark surfaces. */
+:root{--text-burgundy:#571b30;--text-gold:#846125;--text-gold-light:#efd5a0}
+body.brand-text{color:var(--text-burgundy)}
+body.brand-text :where(h1,h2,h3,h4,h5,h6,p,a,span,small,strong,label,li,figcaption,summary,button,input,textarea,select,option){color:var(--text-burgundy)!important}
+body.brand-text :where(em,.eyebrow,.about-kicker,.about-label,.journal-category,.space-index,.process-number,.tile-number,.folio-type,.folio-number,.step-number,.footer-location,figcaption){color:var(--text-gold)!important}
+body.brand-text input::placeholder,body.brand-text textarea::placeholder{color:#805063!important;opacity:1}
+body.brand-text :where(.hero,.service-manifesto,.service-mosaic-note,.premium-footer,.space-lightbox,.image-caption,.vertical-label) :where(h1,h2,h3,h4,p,a,span,small,strong,em,button){color:var(--text-gold-light)!important}
+body.brand-text :where(.service-manifesto,.service-mosaic-note,.premium-footer,.space-lightbox,.vertical-label){color:var(--text-gold-light)!important}
+body.brand-text :where(.nav-cta,.pack-badge,.contact .button,.contact button,.folio-controls button:last-child),body.brand-text :where(.nav-cta,.pack-badge,.contact .button,.contact button,.folio-controls button:last-child) *{color:var(--text-gold-light)!important}
+body.brand-text .space-controls button:hover{color:var(--text-gold-light)!important}
+body.brand-text a:hover{color:var(--text-gold)!important}
+body.brand-text .premium-footer a:hover,body.brand-text .nav-cta:hover{color:#ffe6ae!important}
+/* The standalone preview supports both light and dark themes. */
+body.legacy-brand-text{--fg:#efd5a0;--mut:#dfbe80;--gold:#dfbe80;color:var(--fg)}
+body.legacy-brand-text :where(h1,h2,h3,h4,p,a,span,small,strong,label,li,figcaption,summary,button,input,textarea,select){color:var(--fg)!important}
+body.legacy-brand-text :where(em,.eyebrow){color:var(--gold)!important}
+body.legacy-brand-text :where(.btn.f,.btn:hover){color:#571b30!important}
+:root[data-theme=light] body.legacy-brand-text{--fg:#571b30;--mut:#571b30;--gold:#846125}
+@media(prefers-color-scheme:light){:root:not([data-theme=dark]) body.legacy-brand-text{--fg:#571b30;--mut:#571b30;--gold:#846125}}
