@@ -10,6 +10,7 @@
 @media(max-width:760px){.folio-footer .folio-signature{max-width:100%}.folio-introduction .folio-main{aspect-ratio:1/1}}
 .folio-ambiance-detail{overflow:hidden}
 .folio-side .folio-ambiance-detail img{object-fit:contain;object-position:center;aspect-ratio:auto;height:auto;width:100%}
+.folio-side .folio-technical-detail img{object-fit:contain;height:auto;aspect-ratio:auto;width:100%;background:#000}
 .folio-introduction .folio-note{max-width:none;width:100%;text-align:center;line-height:1.8}
 .folio-introduction .folio-note span{display:block}
 .folio-introduction .folio-note span+span{margin-top:12px}
