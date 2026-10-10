@@ -4,7 +4,10 @@
 .folio-signature{font:12px/1.6 Georgia,serif;color:#78694e;display:flex;align-items:center}
 .folio-interiors{display:block;font-size:17px;font-style:italic;margin-top:9px;color:#82745c}
 .folio-introduction .folio-type{margin-bottom:45px}
-.folio-introduction .folio-main{object-position:50% 65%}
+.folio-introduction .folio-main{object-position:center 35%}
+.folio-introduction .folio-interiors{font:500 18px/1.55 'DM Sans',Arial,sans-serif;letter-spacing:0;margin-top:16px}
+.folio-footer .folio-signature{max-width:65%;line-height:1.7}
+@media(max-width:760px){.folio-footer .folio-signature{max-width:100%}.folio-introduction .folio-main{aspect-ratio:1/1}}
 .folio-ambiance-detail{overflow:hidden}
 .folio-side .folio-ambiance-detail img{object-fit:cover;object-position:50% 85%;aspect-ratio:1}
 .portfolio-architect{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:36px;padding:30px 0 8px;border-top:1px solid #e7e1d5}
