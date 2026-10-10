@@ -1,6 +1,6 @@
 .about-page{background:#f8f5ee}
 .about-page .header{background:rgba(39,34,26,.75)}
-.about-stage{position:relative;isolation:isolate;min-height:100svh;padding:145px 7% 70px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(#c5bbaeaa,#c5bbaebf),url('assets/ambiance-salon.jpg') center 60%/cover}
+.about-stage{position:relative;isolation:isolate;min-height:100svh;padding:145px 7% 70px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(#c5bbaeaa,#c5bbaebf),url('assets/ambiance-escalier.png') center 60%/cover}
 .about-watermark{position:absolute;top:72px;left:0;width:100%;overflow:hidden;text-align:center;color:#f8f5ee44;font:clamp(36px,9vw,150px)/1 Georgia,serif;letter-spacing:-5px;white-space:nowrap;z-index:-1;pointer-events:none}
 .about-panel{width:100%;max-width:1300px;margin:auto;display:grid;grid-template-columns:1fr 1.1fr;gap:8%;padding:55px 5%;background:#fffefa;box-shadow:0 28px 55px #201b2330;min-height:570px}
 .about-panel-copy{display:flex;flex-direction:column;align-items:flex-start}

@@ -19,7 +19,7 @@
 .portfolio-architect h2 span{font-size:.65em;font-style:italic;color:#81735e}
 .portfolio-architect p{font:13px/1.8 Arial,sans-serif;color:#756c5e;margin:0 0 8px}
 @media(max-width:760px){.portfolio-architect{grid-template-columns:1fr;gap:14px;padding-top:24px}.portfolio-architect h2 span{display:block;margin-top:5px}}
-.folio-stage{padding:80px 6%;background:linear-gradient(#c7bdaebd,#c7bdaebd),url('assets/ambiance-salon.jpg') center/cover;color:#30291f}
+.folio-stage{padding:80px 6%;background:linear-gradient(#c7bdaebd,#c7bdaebd),url('assets/ambiance-escalier.png') center/cover;color:#30291f}
 .inner-page main>.folio-stage:first-child{padding-top:130px}
 .folio-panel{max-width:1300px;margin:auto;background:#fffefa;padding:28px 28px 20px;box-shadow:0 25px 50px #28211830}
 .folio-heading{position:static!important;background:none!important;border:0!important;padding:0!important;text-align:center;margin:0 0 38px;height:auto!important}
