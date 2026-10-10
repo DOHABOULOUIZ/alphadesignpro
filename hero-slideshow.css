@@ -23,6 +23,14 @@ body .hero-slideshow-controls .hero-pause{border-left:1px solid #e3c28a55;min-wi
 @media(max-width:760px){body .hero.has-slideshow .hero-copy{padding-bottom:110px}.hero-slideshow-controls{bottom:16px;white-space:nowrap}.hero.has-slideshow .hero-bottom{padding-bottom:0}}
 @media(prefers-reduced-motion:reduce){body .hero.has-slideshow .hero-slide{transition:none}}
 /* Minimal carousel controls: dots and a compact playback button. */
+/* Logo-inspired gold: metallic headline and readable gold supporting text. */
+body.brand-text .hero.has-slideshow .hero-copy{--text-gold-light:#f5d88d}
+body.brand-text .hero.has-slideshow h1{color:#f5d88d!important}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){
+body.brand-text .hero.has-slideshow h1{background:linear-gradient(135deg,#e6b963 0%,#fff0bf 32%,#bd873b 55%,#f5d88d 78%,#e6b963 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}
+body.brand-text .hero.has-slideshow h1 :where(span,em){color:inherit!important;-webkit-text-fill-color:inherit}
+}
+@media(forced-colors:active){body.brand-text .hero.has-slideshow h1{background:none;color:CanvasText!important;-webkit-text-fill-color:CanvasText}}
 body .hero-slideshow-controls{gap:10px;align-items:center;padding:7px 12px;border:1px solid #efd5a040;border-radius:32px;background:#321c2566;backdrop-filter:blur(10px)}
 body.brand-text .hero-slideshow-controls button:not(.hero-pause){position:relative;font-size:0;min-width:32px;min-height:40px;padding:0;border:0;background:transparent}
 body .hero-slideshow-controls button:not(.hero-pause):before{content:'';display:block;width:7px;height:7px;margin:auto;border-radius:8px;background:#efd5a080;transition:width .35s,background .35s}
