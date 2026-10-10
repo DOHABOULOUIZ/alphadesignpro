@@ -16,5 +16,11 @@ document.querySelector('.dialog-close').addEventListener('click',()=>dialog.clos
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 dialog.addEventListener('close',()=>{document.body.style.overflow='';});
 document.querySelectorAll('[data-pack]').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#pack').value=a.dataset.pack;}));
-document.querySelector('#contact-form').addEventListener('submit',e=>{e.preventDefault();});
+document.querySelector('#contact-form').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!e.currentTarget.reportValidity())return;
+ const data=new FormData(e.currentTarget);
+ const message=`Bonjour AlphaDesignPro, je m’appelle ${String(data.get('name')||'').trim()}.\n\nMon projet : ${data.get('type')}\nAccompagnement : ${data.get('pack')}\n\n${String(data.get('message')||'').trim()}`;
+ window.location.href=`https://wa.me/212621531398?text=${encodeURIComponent(message)}`;
+});
 document.querySelector('#year').textContent=new Date().getFullYear();
