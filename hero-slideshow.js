@@ -10,8 +10,8 @@
  images.forEach((img,i)=>{img.classList.add('hero-slide');img.classList.toggle('is-active',i===0)});
  hero.classList.add('has-slideshow');
  const heading=hero.querySelector('h1'),description=hero.querySelector('.hero-description');
- const captions=[['Des espaces. Une âme.','Des intérieurs pensés pour vous, de la première idée aux derniers détails.'],['La lumière, naturellement.','Des volumes ouverts et des matières douces pour un intérieur apaisant.'],['Le sens du détail.','Le bois, la lumière et les textures composent un espace chaleureux.']];
- const eyebrow=hero.querySelector('.eyebrow');if(eyebrow)eyebrow.textContent='ALPHADESIGNPRO · INSPIRATIONS D’INTÉRIEUR';
+ const captions=[['Des espaces. Une âme.','Des espaces pensés pour vous, de la première idée aux derniers détails.'],['La lumière, naturellement.','Des volumes ouverts et des matières douces pour un intérieur apaisant.'],['Le sens du détail.','Le bois, la lumière et les textures composent un espace chaleureux.']];
+ const eyebrow=hero.querySelector('.eyebrow');if(eyebrow)eyebrow.textContent='ALPHADESIGNPRO · INSPIRATIONS & ESPACES';
  const controls=document.createElement('div');controls.className='hero-slideshow-controls';controls.setAttribute('role','group');controls.setAttribute('aria-label','Photos d’ambiance');
  const dots=images.map((img,i)=>{const b=document.createElement('button');b.type='button';b.textContent=String(i+1).padStart(2,'0');b.setAttribute('aria-label',`Afficher l’ambiance ${i+1}`);b.onclick=()=>{paused=true;show(i);schedule()};controls.append(b);return b;});
  const pause=document.createElement('button');pause.type='button';pause.className='hero-pause';controls.append(pause);hero.append(controls);

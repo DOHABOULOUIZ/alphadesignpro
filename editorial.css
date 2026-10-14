@@ -49,6 +49,9 @@
 .conception-images figure{margin:0}.conception-images figure:last-child{margin-top:80px}
 .conception-images img{height:320px;object-fit:contain;background:#f8f5ee}
 .conception-images figcaption{font-size:11px;color:#756345;padding-top:12px}
+.conception-images:has(>figure:only-child){grid-template-columns:1fr}
+.conception-images figure:only-child{margin:0}
+.conception-images figure:only-child img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
 @media(max-width:1000px){.service-visual img{height:280px}.gallery .project-meta{display:block}.gallery .project-meta h3{margin-bottom:10px}.conception{grid-template-columns:1fr;gap:35px}.conception-images img{height:360px}}
 @media(max-width:760px){.visual-service-grid{grid-template-columns:1fr;gap:36px}.service-visual img{height:auto;aspect-ratio:4/3}.visual-service-grid h3{font-size:25px;gap:14px}.projects .project-grid.gallery{grid-template-columns:1fr;gap:38px}.gallery .project-card[data-project="bedroom"],.gallery .project-card[data-project="boutique"]{width:100%;grid-column:auto}.gallery .project-card .project-photo{aspect-ratio:4/3}.conception-images{grid-template-columns:1fr;gap:26px}.conception-images figure:last-child{margin-top:0}.conception-images img{height:auto;max-height:360px}}
 /* Reference navigation: a fine translucent bar over the opening photograph. */

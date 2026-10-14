@@ -18,3 +18,8 @@ body .folio-controls button:hover{transform:translateY(-3px);box-shadow:0 6px 16
 @media(hover:hover){body .about-editorial-images figure:hover img{transform:scale(1.06)}}
 @media(max-width:760px){body .about-editorial-copy>p:not(.about-kicker){font-size:16px}body .about-editorial-images figure:first-child img{height:360px}body .about-editorial-images figure:last-child img{height:230px}body .about-editorial-images figure:last-child{margin-top:32px}body .folio-description p{font-size:15px}}
 @media(prefers-reduced-motion:reduce){body .about-editorial-images img,body .about-more span,body .folio-controls button{transition:none}}
+/* Single portrait: preserve the full composition instead of a cropped strip. */
+body .about-editorial .about-editorial-images{align-self:center}
+body .about-editorial .about-editorial-images figure:only-child{width:100%;max-width:460px;margin:0 auto;border:1px solid #c9ae7955;box-shadow:0 16px 36px #571b3012}
+body .about-editorial .about-editorial-images figure:only-child img{height:auto;width:100%;aspect-ratio:auto;object-fit:contain;transform:none}
+@media(max-width:760px){body .about-editorial .about-editorial-images{width:100%}body .about-editorial .about-editorial-images figure:only-child{max-width:400px}}

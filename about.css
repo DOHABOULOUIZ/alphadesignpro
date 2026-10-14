@@ -14,3 +14,8 @@
 .about-editorial-images figure:last-child img{height:250px;object-position:center 45%}
 @media(max-width:1000px){.about-editorial{gap:6%;padding-inline:6%}.about-editorial-images{gap:16px}.about-editorial-images img{height:440px}.about-editorial-images figure:last-child img{height:210px}.about-editorial .about-kicker{margin-bottom:65px}}
 @media(max-width:760px){.about-editorial{grid-template-columns:1fr;padding:65px 7%;gap:36px}.about-editorial .about-kicker{margin-bottom:32px}.about-editorial h2{font-size:clamp(34px,8vw,48px);letter-spacing:-1px}.about-editorial-images img{height:360px}.about-editorial-images figure:last-child img{height:190px}.about-more{margin-bottom:0}}
+
+/* Keep the remaining About image balanced when shown alone. */
+body .about-editorial-images:has(> figure:only-child){grid-template-columns:1fr}
+body .about-editorial-images figure:only-child{margin-top:0}
+body .about-editorial-images figure:only-child img{height:auto;object-position:center}
