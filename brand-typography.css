@@ -1,7 +1,7 @@
 /* Burgundy text on light surfaces; warm gold on dark surfaces. */
 :root{--text-burgundy:#571b30;--text-gold:#846125;--text-gold-light:#efd5a0}
 /* Keep the brand palette on mobile, including native form controls. */
-html:has(body.brand-text){color-scheme:light}
+html:has(body.brand-text){color-scheme:only light}
 body.brand-text{-webkit-tap-highlight-color:#d8bf8833}
 body.brand-text :where(input,textarea,select){color-scheme:light;accent-color:var(--text-burgundy);-webkit-text-fill-color:var(--text-burgundy)}
 body.brand-text :where(input,textarea)::placeholder{-webkit-text-fill-color:#805063}

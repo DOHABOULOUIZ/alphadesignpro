@@ -38,3 +38,10 @@ body .hero-slideshow-controls button[aria-pressed=true]:before{width:24px;backgr
 body.brand-text .hero-slideshow-controls button[aria-pressed=true]{border:0;background:transparent}
 body .hero-slideshow-controls .hero-pause{min-width:44px;padding:0 8px;min-height:40px;border:0;border-left:1px solid #efd5a040;font-size:16px}
 @media(prefers-reduced-motion:reduce){body .hero-slideshow-controls button:before{transition:none}}
+/* Solid light gold avoids fragile transparent gradient text on mobile browsers. */
+@media(max-width:760px) and (forced-colors:none){
+ body.brand-text .hero.has-slideshow h1,body.brand-text .hero.has-slideshow h1 :where(span,em){background:none;color:#ffe6ae!important;-webkit-text-fill-color:#ffe6ae;text-shadow:0 2px 12px #0008}
+ body.brand-text .hero.has-slideshow .hero-description{color:#fff0ce!important;text-shadow:0 1px 5px #000a}
+ body .hero.has-slideshow .hero-visual:after{background:linear-gradient(180deg,#16110f38,#16110f80 45%,#16110f80)}
+ body .hero.has-slideshow .hero-copy>.button,body .hero-slideshow-controls,body .hero-photo-arrow{background:#571b30}
+}
