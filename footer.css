@@ -40,3 +40,11 @@ body.brand-text .premium-footer .footer-clients a span{width:28px;height:28px;fo
 @media(max-width:760px){body.brand-text .premium-footer .footer-clients a{min-height:64px;padding:12px;font-size:18px;gap:8px}body .premium-footer .footer-clients>div{gap:10px}}
 @media(prefers-reduced-motion:reduce){body .premium-footer .footer-clients a:hover{transform:none}}
 body.brand-text .premium-footer .footer-clients a:has(img){justify-content:center;padding:10px 18px;min-height:76px}body .premium-footer .footer-clients a img{display:block;width:100%;max-width:150px;height:54px;object-fit:contain;filter:none}
+
+/* Balance wide wordmarks and taller emblems without cropping the artwork. */
+body.brand-text .premium-footer .footer-clients a:has(img){min-height:96px;padding:10px 16px}
+body .premium-footer .footer-clients a img{max-width:210px;height:72px}
+body .premium-footer .footer-clients a img[src*="client-odassia"],body .premium-footer .footer-clients a img[src*="client-stillbois"]{height:64px}
+body.brand-text .premium-footer .footer-clients a[href="https://alvoraliving.ma/"]{background:#571b30;border-color:#d6ae63}
+body .premium-footer .footer-clients a img[src*="client-alvora"],body .premium-footer .footer-clients a img[src*="client-casapaint"]{height:78px}
+@media(max-width:760px){body.brand-text .premium-footer .footer-clients a:has(img){min-height:90px;padding:8px 12px}body .premium-footer .footer-clients a img{max-width:100%}}
