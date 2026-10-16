@@ -10,6 +10,7 @@
 .preview-photo figcaption>span{font-size:9px;letter-spacing:1.7px;color:#e0cba0}
 .preview-photo figcaption>p{font:32px/1.2 Georgia,serif;color:#fff8ec;margin:18px 0}
 .preview-photo small{font-size:11px;color:#e0ddd2}
+body.brand-text .preview-photo figcaption,body.brand-text .preview-photo figcaption :where(span,p,small){color:#ffe6ae!important;-webkit-text-fill-color:#ffe6ae;text-shadow:0 1px 5px #0009}
 .preview-expertises{display:flex;flex-direction:column}
 .preview-service{display:grid;grid-template-columns:24px 1fr 36px;gap:18px;padding:25px 0;border-top:1px solid #c8c0b1;color:#292a22;transition:background .3s,padding .3s}
 .preview-number{font-size:11px;color:#816b45;line-height:2.5;font-variant-numeric:tabular-nums}
