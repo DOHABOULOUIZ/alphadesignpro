@@ -19,3 +19,13 @@ footer.premium-footer{display:grid;grid-template-columns:1.4fr .8fr 1fr 1.2fr;ga
 .premium-footer .footer-clients a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:18px;border:1px solid #d8bf8855;font:22px/1.4 Georgia,serif;transition:background .25s}
 .premium-footer .footer-clients a:hover{background:#d8bf8815}
 @media(max-width:760px){.premium-footer .footer-clients>div{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-footer .footer-clients a{font-size:18px;padding:14px}}
+/* Client directory: warm ivory cards against the burgundy footer. */
+body .premium-footer .footer-clients{padding:32px 0 8px}
+body .premium-footer .footer-clients h2{font-size:13px;letter-spacing:2.5px;margin-bottom:24px}
+body .premium-footer .footer-clients>div{gap:18px}
+body.brand-text .premium-footer .footer-clients a{position:relative;min-height:112px;padding:26px 24px;background:#f2e9da;border:1px solid #dfc58e;border-radius:4px;color:#571b30!important;-webkit-text-fill-color:#571b30;font:400 clamp(22px,2vw,29px)/1.25 Georgia,serif;box-shadow:0 8px 24px #18081020;transition:transform .3s,background .3s,box-shadow .3s}
+body .premium-footer .footer-clients a:before{content:'';position:absolute;top:16px;left:24px;width:28px;height:2px;background:#a77c37;transition:width .3s}
+body.brand-text .premium-footer .footer-clients a span{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:34px;height:34px;border:1px solid #a77c3755;border-radius:50%;font:18px Arial,sans-serif;color:#846125!important;-webkit-text-fill-color:#846125;transition:transform .3s}
+@media(hover:hover){body.brand-text .premium-footer .footer-clients a:hover{background:#fff7e9;transform:translateY(-5px);box-shadow:0 14px 30px #18081035}body .premium-footer .footer-clients a:hover:before{width:48px}body .premium-footer .footer-clients a:hover span{transform:rotate(45deg)}}
+@media(max-width:760px){body .premium-footer .footer-clients>div{gap:12px}body.brand-text .premium-footer .footer-clients a{min-height:110px;padding:26px 16px 18px;font-size:21px;flex-wrap:wrap}body .premium-footer .footer-clients a:before{left:16px}body .premium-footer .footer-clients a span{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){body .premium-footer .footer-clients a,body .premium-footer .footer-clients a:before,body .premium-footer .footer-clients a span{transition:none}body .premium-footer .footer-clients a:hover,body .premium-footer .footer-clients a:hover span{transform:none}}
