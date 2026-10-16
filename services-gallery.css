@@ -28,3 +28,6 @@ dialog.space-lightbox{position:fixed;inset:0;width:94vw;max-width:1300px;height:
 
 /* Separate the commercial overview from the specific project description. */
 #etude-boutique .bathroom-heading p+p{margin-top:10px;padding-top:24px;border-top:1px solid #c9ae7980}
+
+#etude-boutique .commercial-project-title{font:500 22px/1.45 Georgia,serif;margin:10px 0 0;padding-top:24px;border-top:1px solid #c9ae7980;max-width:320px}
+@media(max-width:700px){#etude-boutique .commercial-project-title{max-width:none;font-size:21px}}
