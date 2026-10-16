@@ -53,3 +53,8 @@ body.brand-text .header a:focus-visible,body.brand-text .header button:focus-vis
  body.brand-text .header .landscape-logo img{filter:none}
  body.brand-text .header .menu-icon:before,body.brand-text .header .menu-icon:after{background:#ffe6ae}
 }
+
+body .header .nav-socials{display:flex;gap:12px;align-items:center;border-left:1px solid #d8bf8866;padding-left:16px}
+body .header .nav-socials a{font-size:10px;letter-spacing:0}
+@media(min-width:761px){body .header nav{gap:clamp(10px,1.4vw,22px)}body .header .nav-socials{gap:9px;padding-left:10px}}
+@media(max-width:760px){body .header .nav-socials{border-left:0;border-top:1px solid #d8bf8866;margin-top:18px;padding:12px 0 0;flex-wrap:wrap;gap:18px}body .header .nav-socials a{font-size:14px;border-bottom:0;min-height:44px}}
