@@ -44,4 +44,5 @@ body .hero-slideshow-controls .hero-pause{min-width:44px;padding:0 8px;min-heigh
  body.brand-text .hero.has-slideshow .hero-description{color:#fff0ce!important;text-shadow:0 1px 5px #000a}
  body .hero.has-slideshow .hero-visual:after{background:linear-gradient(180deg,#16110f38,#16110f80 45%,#16110f80)}
  body .hero.has-slideshow .hero-copy>.button,body .hero-slideshow-controls,body .hero-photo-arrow{background:#571b30}
+ body.brand-text .hero :where(.eyebrow,.eyebrow span,.button,.button span,.hero-photo-arrow,.hero-slideshow-controls button){color:#ffe6ae!important;-webkit-text-fill-color:#ffe6ae}
 }

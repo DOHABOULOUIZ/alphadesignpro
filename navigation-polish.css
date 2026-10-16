@@ -45,3 +45,11 @@ body.brand-text .header nav .nav-cta:hover{background:#fff0bf;color:#571b30!impo
 body.brand-text .header .menu-toggle{border-color:#d8bf8870;background:transparent}
 body.brand-text .header nav a:not(.nav-cta){border-bottom-color:#d8bf8833}
 body.brand-text .header a:focus-visible,body.brand-text .header button:focus-visible{outline-color:#f5d88d}
+/* Explicit paint colors keep mobile navigation legible in darkening browsers. */
+@media(max-width:760px) and (forced-colors:none){
+ body.brand-text .header :where(a,span,button){color:#ffe6ae!important;-webkit-text-fill-color:#ffe6ae}
+ body.brand-text .header nav a[aria-current]:not(.nav-cta),body.brand-text .header nav a:hover{color:#fff0ce!important;-webkit-text-fill-color:#fff0ce}
+ body.brand-text .header nav .nav-cta{color:#571b30!important;-webkit-text-fill-color:#571b30}
+ body.brand-text .header .landscape-logo img{filter:brightness(0) saturate(100%) invert(91%) sepia(20%) saturate(672%) hue-rotate(339deg) brightness(104%) contrast(101%)}
+ body.brand-text .header .menu-icon:before,body.brand-text .header .menu-icon:after{background:#ffe6ae}
+}
