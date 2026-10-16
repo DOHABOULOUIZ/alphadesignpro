@@ -14,7 +14,7 @@
    links.forEach(link=>{link.removeAttribute('aria-current');if(link===current)link.setAttribute('aria-current',new URL(link.href).hash?'location':'page')});
  }
  function move(link){
-   if(!link||link.classList.contains('nav-cta')||mobile.matches){marker.classList.remove('visible');return;}
+   if(!link||link.classList.contains('nav-cta')||link.closest('.nav-socials')||mobile.matches){marker.classList.remove('visible');return;}
    marker.style.setProperty('--marker-x',`${link.offsetLeft}px`);marker.style.setProperty('--marker-width',`${link.offsetWidth}px`);marker.classList.add('visible');
  }
  function refresh(){frame=0;header.classList.toggle('is-scrolled',scrollY>30);chooseCurrent();if(!nav.matches(':hover')&&!nav.contains(document.activeElement))move(current);}

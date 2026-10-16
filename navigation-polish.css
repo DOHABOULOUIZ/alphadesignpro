@@ -58,3 +58,11 @@ body .header .nav-socials{display:flex;gap:12px;align-items:center;border-left:1
 body .header .nav-socials a{font-size:10px;letter-spacing:0}
 @media(min-width:761px){body .header nav{gap:clamp(10px,1.4vw,22px)}body .header .nav-socials{gap:9px;padding-left:10px}}
 @media(max-width:760px){body .header .nav-socials{border-left:0;border-top:1px solid #d8bf8866;margin-top:18px;padding:12px 0 0;flex-wrap:wrap;gap:18px}body .header .nav-socials a{font-size:14px;border-bottom:0;min-height:44px}}
+/* Social shortcuts with readable labels and generous touch targets. */
+body .header .nav-socials{gap:8px;padding-left:18px;margin-left:4px}
+body .header .nav-socials a{min-height:40px;padding:9px 12px;border:1px solid #f5d88d55;border-radius:24px;font-size:12px;line-height:1.2;text-transform:none;letter-spacing:0;background:#ffffff08;transition:background .25s,border-color .25s,transform .25s}
+body .header .nav-socials a:after{display:none!important}
+body .header .nav-socials a:hover{background:#f5d88d20;border-color:#f5d88d;transform:translateY(-2px)}
+body .header .nav-socials a:focus-visible{outline:2px solid #ffe6ae;outline-offset:3px}
+@media(min-width:761px) and (max-width:1150px){body .header{gap:12px;padding-inline:3%}body .header nav{gap:10px}body .header .nav-socials{padding-left:10px;gap:5px}body .header .nav-socials a{font-size:11px;padding:9px 8px}body .header nav .nav-cta{padding:12px 14px}body .header .landscape-logo{width:110px}}
+@media(max-width:760px){body .header .nav-socials{margin:20px 0 0;padding:18px 0 0;gap:10px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}body .header .nav-socials a{justify-content:center;min-height:46px;padding:12px 6px;font-size:12px;border:1px solid #f5d88d55}}
