@@ -25,3 +25,6 @@ dialog.space-lightbox{position:fixed;inset:0;width:94vw;max-width:1300px;height:
 .space-close{position:absolute;top:10px;right:20px;min-height:40px;padding:8px 16px;border:1px solid #ffffff70;background:transparent;color:white;cursor:pointer}
 @media(max-width:700px){.service-studies .space-editorial{grid-template-columns:1fr;gap:18px;padding:30px 0}.space-editorial .bathroom-heading{padding:0;gap:14px}.space-editorial .bathroom-heading p{max-width:none}.service-studies .space-thumbnails{grid-column:1}.space-enlarge{height:430px;height:clamp(320px,105vw,500px);padding:12px}.space-enlarge>span{bottom:20px;right:20px}.space-thumbnails figure{flex-basis:60px}.space-thumbnails button{width:60px;height:70px}}
 @media(prefers-reduced-motion:reduce){.space-thumbnails button,.space-controls button{transition:none}.space-thumbnails button:hover{transform:none}}
+
+/* Separate the commercial overview from the specific project description. */
+#etude-boutique .bathroom-heading p+p{margin-top:10px;padding-top:24px;border-top:1px solid #c9ae7980}
