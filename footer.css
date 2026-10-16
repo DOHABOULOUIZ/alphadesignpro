@@ -48,3 +48,12 @@ body .premium-footer .footer-clients a img[src*="client-odassia"],body .premium-
 body.brand-text .premium-footer .footer-clients a[href="https://alvoraliving.ma/"]{background:#571b30;border-color:#d6ae63}
 body .premium-footer .footer-clients a img[src*="client-alvora"],body .premium-footer .footer-clients a img[src*="client-casapaint"]{height:78px}
 @media(max-width:760px){body.brand-text .premium-footer .footer-clients a:has(img){min-height:90px;padding:8px 12px}body .premium-footer .footer-clients a img{max-width:100%}}
+/* Slowly shifting gold, with a darker burgundy gradient behind Alvora. */
+body.brand-text .premium-footer .footer-clients a:has(img){background:linear-gradient(120deg,#c99a49,#f4da99,#d9b267,#f8e2ad);background-size:300% 300%;animation:client-gold-flow 12s ease-in-out infinite;transition:transform .35s,box-shadow .35s,border-color .35s}
+body.brand-text .premium-footer .footer-clients a:nth-child(2){animation-delay:-3s}
+body.brand-text .premium-footer .footer-clients a:nth-child(3){animation-delay:-6s}
+body.brand-text .premium-footer .footer-clients a:nth-child(4){animation-delay:-9s}
+body.brand-text .premium-footer .footer-clients a[href="https://alvoraliving.ma/"]{background-image:linear-gradient(120deg,#39121f,#6c2940,#4b1729,#78502f)}
+@keyframes client-gold-flow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(hover:hover){body.brand-text .premium-footer .footer-clients a:has(img):hover{transform:translateY(-3px);border-color:#ffe6ae;box-shadow:0 8px 22px #0003}}
+@media(prefers-reduced-motion:reduce){body.brand-text .premium-footer .footer-clients a:has(img){animation:none;transition:none;background-position:50% 50%}body.brand-text .premium-footer .footer-clients a:has(img):hover{transform:none}}
